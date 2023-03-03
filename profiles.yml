@@ -1,0 +1,13 @@
+sample:
+  outputs:
+    dev:
+      dataset: wifi_telemetry_cv_staging_wifi_alpha
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: lab-wifi-dt1
+      threads: 1
+      type: bigquery
+  target: dev
