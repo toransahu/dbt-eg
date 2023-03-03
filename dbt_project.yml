@@ -47,3 +47,7 @@ vars:
   profile_priority: "interactive"
   profile_gcp_project: "some_gcp_project"
   profile_threads: 3
+  # default/indicative source variable (in schema.yml) values
+  source_iot_telemetry: "some_gbq_dataset" # TODO: this & profile_gbq_dataset should be same
+  table_device: "device"
+  table_event: "event"

@@ -1,2 +1,36 @@
-
 version: 2
+
+sources:
+  - name: "{{ var('source_iot_telemetry') }}"
+    description: IoT telemetry data source
+    tables:
+      - name: "{{ var('table_device') }}"
+        description: IoT device table
+        columns:
+          - name: mac
+            description: MAC address of the device
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: Name of the device
+          - name: model
+            description: Model Information of the device
+          - name: fw_version
+            description: Firmware version of the device
+          - name: vendor_name
+            description: Vendor of the device
+      - name: "{{ var('table_event') }}"
+        description: IoT device event table
+        columns:
+          - name: mac
+            description: MAC address of the device
+            tests:
+              - unique
+              - not_null
+          - name: timestamp
+            description: Timestamp in epoch
+          - name: event_type
+            description: Event type
+          - name: event_data
+            description: Event data
