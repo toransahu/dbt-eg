@@ -65,6 +65,35 @@ zsh: correct 'test' to 'tests' [nyae]? n
 13:29:54  Nothing to do. Try checking your model configs and model specification args
 ```
 
+# Run
+
+```bash
+(.venv)
+~/dbt-eg on  main! ⌚ 18:59:47
+$ dbt run \
+--profile bigquery \
+--vars "{source_iot_telemetry: iot_telemetry_dev, table_device: device, table_event: event}" \
+--select device_event
+```
+
+```bash
+13:44:44  Running with dbt=1.4.4
+13:44:44  Found 1 model, 4 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics
+13:44:44
+13:44:49  Concurrency: 1 threads (target='staging')
+13:44:49
+13:44:49  1 of 1 START sql view model iot_telemetry_dev.device_event ..................... [RUN]
+13:44:51  1 of 1 OK created sql view model iot_telemetry_dev.device_event ................ [CREATE VIEW (0 processed) in 1.94s]
+13:44:51
+13:44:51  Finished running 1 view model in 0 hours 0 minutes and 7.23 seconds (7.23s).
+13:44:51
+13:44:51  Completed successfully
+13:44:51
+13:44:51  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+```
+
+
+
 # DBT Basics
 
 ## DBT Primitives

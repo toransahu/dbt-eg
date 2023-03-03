@@ -34,3 +34,25 @@ sources:
             description: Event type
           - name: event_data
             description: Event data
+models:
+  - name: device_event
+    description: IoT device event consolidation model
+    config:
+      materialized: view  # always be specific (if not specified, default is view)
+    columns:
+      - name: mac
+        description: Device MAC address, the primary key for this table
+      - name: timestamp
+        description: Timestamp in epoch
+      - name: name
+        description: Name of the device
+      - name: model
+        description: Model Information of the device
+      - name: fw_version
+        description: Firmware version of the device
+      - name: vendor_name
+        description: Vendor of the device
+      - name: event_type
+        description: Event type
+      - name: event_data
+        description: Event data
