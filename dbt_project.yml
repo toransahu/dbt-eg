@@ -35,3 +35,15 @@ models:
   dbt_eg: # project name
     # Config indicated by + and applies to all files under models/
     +materialized: view
+
+# project variables
+vars:
+  # default/indicative values of profiles.bigquery.outputs.local target/connection
+  profile_gbq_dataset: "some_gbq_dataset"
+  profile_job_exec_timeout_sec: 300
+  profile_job_retry: 3
+  profile_gbq_ds_loc: "US"
+  profile_gbq_auth_method: "oauth"
+  profile_priority: "interactive"
+  profile_gcp_project: "some_gcp_project"
+  profile_threads: 3
