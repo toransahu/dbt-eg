@@ -56,3 +56,14 @@ models:
         description: Event type
       - name: event_data
         description: Event data
+  - name: device_event_fast # NOT mandatory to define, but better, especially to define config/test
+    description: IoT device event consolidation model
+    config:
+      materialized: table  # always be specific
+    columns:
+      - name: mac
+        description: Device MAC address, the primary key for this table
+      - name: timestamp
+        description: Timestamp in epoch
+      - name: event_type
+        description: Event type

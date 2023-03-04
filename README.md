@@ -92,6 +92,17 @@ $ dbt run \
 13:44:51  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 ```
 
+Run model `device_event_fast` and it's upstream dependencies
+
+```bash
+(.venv)
+~/dbt-eg on  main! ⌚ 18:59:47
+$ dbt run \
+--profile bigquery \
+--target default \ # this time being explicit, just for verbose
+--vars "{source_iot_telemetry: iot_telemetry_dev, table_device: device, table_event: event}" \
+--select "+device_event_fast"
+```
 
 
 # DBT Basics
