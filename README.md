@@ -105,6 +105,18 @@ $ dbt run \
 ```
 
 
+Run pipeline `device` and it's upstream dependencies
+
+```bash
+(.venv)
+~/dbt-eg on  main! ⌚ 18:59:47
+$ dbt run \
+--profile bigquery \
+--target default \
+--vars "{source_iot_telemetry: iot_telemetry_dev, table_device: device, table_event: event}" \
+--select "+device"
+```
+
 # DBT Basics
 
 ## DBT Primitives
