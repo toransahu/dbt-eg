@@ -182,6 +182,10 @@ https://docs.getdbt.com/docs/build/tests
 
 - Store test failures in table
     - https://docs.getdbt.com/docs/build/tests#storing-test-failures
+- Misc
+    - https://docs.getdbt.com/blog/aggregating-test-failures-with-dbt
+    - https://docs.getdbt.com/blog/grouping-data-tests
+    - https://www.getdbt.com/product/data-testing/
 
 ### Snapshot
 
@@ -203,7 +207,8 @@ https://docs.getdbt.com/docs/build/tests
 
 # Deployment
 
-https://docs.getdbt.com/docs/deploy/deployments
+- https://docs.getdbt.com/docs/deploy/deployments
+- https://docs.getdbt.com/blog/intelligent-slim-ci
 
 
 - DBT Cloud
@@ -213,6 +218,10 @@ https://docs.getdbt.com/docs/deploy/deployments
 - Dagster
 - CI/Jenkins
 - Cron
+
+# Best Practices
+
+- https://docs.getdbt.com/blog/align-with-dbt-project-evaluator
 
 # FAQs
 
