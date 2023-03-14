@@ -254,6 +254,16 @@ https://docs.getdbt.com/docs/build/tests
 - How to parition/cluster bigquery models using config/property
 
 
+# Misc
+- https://docs.getdbt.com/guides/best-practices/how-we-structure/1-guide-overview
+- https://medium.com/geekculture/how-to-structure-your-dbt-project-c62103deceb4
+- https://cloudacademy.com/lab/best-practices-organizing-dbt-models/
+- https://towardsdatascience.com/dbt-models-structure-c31c8977b5fc
+- https://towardsdatascience.com/the-most-efficient-way-to-organize-dbt-models-244e23c17072
+- https://www.databricks.com/blog/2022/12/15/best-practices-super-powering-your-dbt-project-databricks.html
+- https://airbyte.com/blog/best-practices-dbt-style-guide
+- https://www.databricks.com/blog/2022/12/15/best-practices-super-powering-your-dbt-project-databricks.html (lint/format)
+
 # References
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
