@@ -18,5 +18,5 @@ bigquery: # BigQuery warehouse profile
       method: "{{ var('profile_gbq_auth_method') }}"
       priority: "{{ var('profile_priority') }}"
       project: "{{ var('profile_gcp_project') }}"
-      threads: "{{ var('profile_threads') }}"
+      threads: "{{ var('profile_job_threads') }}"
       type: bigquery
