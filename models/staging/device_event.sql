@@ -13,5 +13,5 @@ FROM
     {{ source(var('source_iot_telemetry'), var('table_device')) }} device
 JOIN
     {{ source(var('source_iot_telemetry'), var('table_event')) }} event
-ON
-    device.mac = event.mac
+    ON
+        device.mac = event.mac

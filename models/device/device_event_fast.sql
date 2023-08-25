@@ -3,6 +3,6 @@
 SELECT
     mac,
     timestamp,
-    event_type,
+    event_type
 FROM
     {{ ref("device_event") }}
